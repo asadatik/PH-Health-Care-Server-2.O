@@ -3,7 +3,7 @@ import { ScheduleController } from "./schedule.controller";
 
 const router = express.Router();
 
-router.get("/", ScheduleController.scheduleForDoctors);
+router.get("/", ScheduleController.schedulesForDoctor);
 
 router.post("/", ScheduleController.insertIntoDB);
 
